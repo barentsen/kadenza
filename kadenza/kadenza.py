@@ -245,7 +245,7 @@ class TargetPixelFileFactory(object):
                                                   self.collateral_mapping_fn)
                 smear_values = colldata.get_smear_at_columns(column_coords, channel)
             else:
-                smear_values = 0.0
+                smear_values = 0
 
             # Determine pixel values
             pixelvalues_raw = cadfile[channel].data['orig_value'][:]
