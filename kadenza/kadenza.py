@@ -105,7 +105,7 @@ class TargetPixelFileFactory(object):
             self.collateral_files = ([fn.replace('-targ.fits',
                                                   '-col.fits')
                                       for fn in self.cadence_pixel_files])
-            self.collateral_mapping_fn = pixel[:18] + '000-000-lcc.fits'
+            self.collateral_mapping_fn = pixel_mapping_file[:18] + '000-000-lcc.fits'
         self.pixel_mapping = PixelMappingFile(pixel_mapping_file)
         self.no_cadences = len(self.cadence_pixel_files)
 
