@@ -103,7 +103,7 @@ class TargetPixelFileFactory(object):
         if correct_smear:
             self.collateral_mapping_files = ([fn.replace('-targ.fits',
                                                              '-col.fits')
-                                                  for fn in filenames])
+                                                  for fn in self.cadence_pixel_files])
         else:
             self.collateral_mapping_files = None
         self.pixel_mapping = PixelMappingFile(pixel_mapping_file)
