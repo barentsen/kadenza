@@ -105,7 +105,7 @@ class TargetPixelFileFactory(object):
                                                   '-col.fits')
                                       for fn in self.cadence_pixel_files])
             self.collateral_mapping_fn =  pixel_mapping_file.replace('\?\?\?-\?\?\?-lcm',
-                                                                     '000-000-lcc.fits'))
+                                                                     '000-000-lcc.fits')
         else:
             self.collateral_files = None
         self.pixel_mapping = PixelMappingFile(pixel_mapping_file)
